@@ -33,7 +33,7 @@
     <header class="jumbotron text-center">
         <h1 class="display-4">Welcome to 100% Unsuccessful</h1>
         <p class="lead">Your journey to failure starts here!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" id="learnButton" role="button">Learn more</a>
     </header>
 
     <!-- Main Content -->
@@ -57,5 +57,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            // Get the button element
+        const button = document.getElementById("learnButton");
+        
+        // Add click event listener
+        button.addEventListener("click", function() {
+            // Show dialog with message
+            alert("Button unsuccessful");
+        });
+    </script>
 </body>
 </html>
